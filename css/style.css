@@ -353,6 +353,75 @@ hr {
   font-size: 13px;
 }
 
+/* Reservation.html: ----------------- */
+
+.reservation-form {
+  width: 870px;
+  display: inline-block;
+  background: #e5e5e5;
+  font-family: 'Michroma', sans-serif;
+}
+
+.reservation-infos {
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 2px;
+}
+
+.reservation-form h1, h3, label, button {
+  text-transform: uppercase;
+  color: rgba(63, 62, 62, 0.993);
+}
+
+.reservation-form h1 {
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.reservation-form h3 {
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.reservation-infos label{
+  background: #dad8d8;
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+
+  display: inline-block;
+  padding: 5px;
+  margin: 5px; 
+  width: 30%;
+  text-align: left;
+}
+.reservation-infos input, textarea {
+  padding: 3px;
+  width: 40%;
+
+  background: #dddada;
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.reservation-infos label {
+  font-size: 10px;
+}
+
+.reservation-infos input {
+  font-size: 13px;
+}
+
+.reservation-infos button:hover {
+  font-size: 90%;
+}
 
 @media (max-width: 374px) {}
 

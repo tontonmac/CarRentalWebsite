@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Michroma" rel="stylesheet">
   <title>Inventory & Rates</title>
 </head>
 
@@ -27,9 +27,71 @@
 
     <div class="primary-content">
       <section class="form-section">
-        
-      </section> <!-- end form-results -->
-    </div> <!-- end primary-content -->
+        <form action="" class="reservation-form">
+          <h1>Reservation Form</h1>
+
+          <h3>Rental Informations</h3>
+          <div class="reservation-infos ">
+            <label for="">Pick Up Date</label>
+            <input type="date" name="pick-date" id="pick-date">
+
+            <label for="">Pick Up Time</label>
+            <input type="time" name="pick-time" id="pick-time">
+          </div>
+          <div class="reservation-infos">
+            <label for="">Return date</label>
+            <input type="date" name="return-date" id="return-date">
+
+            <label for="">Return Time</label>
+            <input type="time" name="return-time" id="return-time">
+          </div>
+          <div class="reservation-infos">
+              <label for="">Location</label>
+              <input type="text" name="location" id="location">
+            </div>
+
+            <h3>Driver's Informations</h3>
+           <div class="driver-infos">
+            <div class="reservation-infos">
+              <label for="">First Name</label>
+              <input type="text" name="first-name" id="first-name">
+            </div>
+            <div class="reservation-infos">
+              <label for="">Last Name</label>
+              <input type="text" name="last-name" id="last-name">
+            </div>
+            <div class="reservation-infos">
+              <label for="">Address</label>
+              <input type="text" name="address" id="address">
+            </div>
+            <div class="reservation-infos">
+              <label for="">Country</label>
+              <input type="text" name="country" id="country">
+            </div>
+            <div class="reservation-infos">
+              <label for="">City</label>
+              <input type="text" name="city" id="city">
+            </div>
+            <div class="reservation-infos">
+              <label for="">Phone</label>
+              <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="reservation-infos">
+              <label for="">Email</label>
+              <input type="email" name="email" id="email">
+            </div>
+            <div class="reservation-infos">
+             
+              <textarea name="comment" id="comments" cols="30" rows="10">Enter comment and questions here...</textarea>
+            </div> 
+          <div class="reservation-infos">
+            <button>Submit Request</button>
+          </div>
+    </div>
+
+    </form>
+    </section> <!-- end form-results -->
+  </div> <!-- end primary-content -->
   </div> <!-- end wrapper -->
   <footer class="main-footer group">
     <!-- footer start-->
