@@ -1,0 +1,291 @@
+/* MAIN CSS STYLING *************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+/* NAV CSS STYLING ************************/
+
+.main-header {
+  width: 100%;
+}
+
+.main-nav li {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+  margin-right: auto;
+  padding-right: 30px;
+}
+
+.main-nav {
+  display: inline-block;
+  border-bottom: 1px solid #b4b4b4;
+  background: #e5e5e5;
+  margin: 0 auto;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.nav-list {
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.nav-list+.nav-list::before {
+  content: '|';
+  padding-right: 10px;
+  color: #b4b4b4;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {}
+
+/* PRIMARY CONTENT STYLING */
+
+.priamary-content {
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.second-content {
+  padding-bottom: 15px;
+}
+
+.first-section,
+.second-section {
+  background: orange;
+  margin: 0 auto;
+  max-width: 870px;
+}
+
+.first-section {
+  margin-top: 20px;
+  height: 479px;
+}
+
+.second-section {
+  background-color: tomato;
+}
+
+.offers {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0 1em;
+}
+
+.specials span,
+.books span {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #3b3a3a;
+  font-size: 1em;
+}
+
+.specials,
+.books {
+  background-color: rgb(229, 229, 229);
+  color: #4d4c4cef;
+}
+
+.specials {
+  padding: 1em;
+  border-radius: 0.2em;
+  position: relative;
+  float: left;
+  width: 58%;
+  height: 220px;
+  max-width: 60%;
+  max-height: 210px;
+  overflow: auto;
+}
+
+.specials p {
+  text-align: left;
+  box-sizing: border-box;
+  max-height: 200px;
+}
+
+.books {
+  padding: 1em;
+  border-radius: 0.2em;
+  position: relative;
+  float: right;
+  width: 40%;
+  max-width: 40%;
+  height: 210px;
+}
+
+.search {
+  width: 100%;
+  margin: 5px;
+  padding: 5px;
+  font-size: .7em;
+  text-transform: uppercase;
+  color: #4d4c4cef;
+}
+.book-now {
+  margin-top: 20px;
+}
+.book-now:hover {
+  background-color: rgb(182, 178, 177);
+  font-size: 80%;
+}
+
+.search-form {
+  padding: 10.5px;
+}
+
+.contact {
+  display: inline-block;
+  max-width: 870px;
+}
+
+.info {
+  float: left;
+  padding: 15px 45px;
+}
+
+.contact h2 {
+  margin: 3px;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: left;
+  color: #4d4c4c;
+}
+
+.contact span {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #636161;
+}
+
+hr {
+  max-width: 870px;
+}
+
+.main-footer {
+  color: #3b3a3a;
+}
+
+/* Float Clearfix ---------------------- */
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Special offers and packages -------- */
+
+.specials_readmore {
+  text-transform: uppercase;
+  font-size: .8em;
+  color: #727070;
+  background: #eeecec;
+  float: left;
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.specials_readmore:hover {
+  color: rgb(138, 135, 135);
+  font-size: 90%;
+}
+
+/* Special.html: Deal styles --------- */
+
+.deals {
+  list-style-type: none;
+  padding: 0;
+  margin: 2em 0 1em;
+  max-width: 870px;
+  display: inline-block;
+}
+
+.deal-list {
+  border-radius: .2em;
+  width: 33.3%;
+  height: 600px;
+  float: left;
+  overflow: hidden;
+  max-height: 700px;
+}
+
+.deal-list h2 {
+  padding: 10px;
+  margin: 4px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #3b3a3a;
+}
+
+.deal-list img {
+  max-width: 100%;
+}
+
+.deal-list p {
+  overflow: auto;
+  text-align: left;
+  color: #3b3a3a;
+}
+
+.deal-list button {
+  width: 100%;
+  padding: 15px;
+  text-transform: uppercase;
+  font-size: bold;
+  margin-top: 129px;
+  cursor: pointer;
+  background: transparent;
+  position: relative;
+  color: #3b3a3a;
+}
+
+.deal-list button:hover {
+  color: darkgray;
+}
+
+/* inentory.html styles */
+
+.inventory-filter-ul {
+  background: #434242;
+  width: 870px;
+  display: inline-block;
+  
+}
+
+.inventory-filter-ul li{
+  display: inline-block;
+  padding: 15px;
+}
+.search-inventory {
+  width: 200px;
+  text-transform: uppercase;
+}
+.inventory-li button {
+  text-transform: uppercase;
+}
+
+
+
+@media (max-width: 374px) {}
+
+@media (min-width: 576px) {}
