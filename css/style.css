@@ -369,7 +369,10 @@ hr {
   padding: 2px;
 }
 
-.reservation-form h1, h3, label, button {
+.reservation-form h1,
+h3,
+label,
+button {
   text-transform: uppercase;
   color: rgba(63, 62, 62, 0.993);
 }
@@ -389,7 +392,7 @@ hr {
   margin-bottom: 0;
 }
 
-.reservation-infos label{
+.reservation-infos label {
   background: #dad8d8;
   border-bottom: 1px solid #bbb9b9;
   border-left: 1px solid #ececec;
@@ -397,11 +400,13 @@ hr {
 
   display: inline-block;
   padding: 5px;
-  margin: 5px; 
+  margin: 5px;
   width: 30%;
   text-align: left;
 }
-.reservation-infos input, textarea {
+
+.reservation-infos input,
+textarea {
   padding: 3px;
   width: 40%;
 
@@ -428,7 +433,7 @@ hr {
 .contact-section {
   width: 870px;
   display: inline-block;
- box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .contact-form {
@@ -436,7 +441,8 @@ hr {
   border-right: 1px solid #ececec;
 }
 
-.contact-field input, label{
+.contact-field input,
+label {
   width: 100%;
   padding: 10px 0;
   margin: 0 auto;
@@ -449,7 +455,7 @@ hr {
   border-right: 1px solid #ececec;
 }
 
-.contact-field textarea{
+.contact-field textarea {
   margin: 0 auto;
   width: 100%;
 }
@@ -513,7 +519,8 @@ hr {
   text-decoration: underline;
 }
 
-.rules-section h1, h3 {
+.rules-section h1,
+h3 {
   text-transform: uppercase;
   margin-bottom: 0;
   font-family: 'Courier New', Courier, monospace;
@@ -528,12 +535,40 @@ hr {
 
 /* media queries styles ------------------------ */
 
-@media (max-width: 575px) {}
+@media (max-width: 575px) {
+  * {
+    width: 100%;
+  }
 
-@media (min-width: 576px) {}
+  .main-nav {
+    padding-right: 0px;
+  }
 
-@media (min-width: 576px) and (max-width: 991px) {}
+  .nav-list {
+    width: 100%;
+  }
 
-@media (min-width: 768px){}
+  .nav-list:hover {
+    border-bottom: 1px solid #bbb9b9;
+  }
 
-@media (min-width: 992px) {}
+  .nav-list+.nav-list::before {
+    content: none;
+  }
+
+  .first-section {
+    margin: 0 auto;
+    max-height: 300px;
+  }
+
+  .img {
+    height: fit-content;
+    max-height: 300px;
+  }
+
+  .offers {
+    
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {}
