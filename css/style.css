@@ -311,9 +311,9 @@ hr {
   width: 50%;
   color: #3b3a3a;
   border-bottom: .5px solid #bbb9b9;
-  border-left: 1px solid #ececec;
-  border-right: 1px solid #ececec;
-  border-radius: 7px;
+  border-left: 1px solid #bbb9b9;
+  border-right: 1px solid #bbb9b9;
+  border-radius: 5px;
 }
 
 .results button {
@@ -538,14 +538,27 @@ h3 {
 @media (max-width: 575px) {
   * {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .main-nav {
-    padding-right: 0px;
+    margin: 0;
+  }
+
+  .nav-list a {
+    display: inline-block;
+    padding: 5px 0;
+    max-width: 575px;
+    text-align: center;
+    width: 375px;
   }
 
   .nav-list {
-    width: 100%;
+    border-bottom: 1px solid #bbb9b9;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding: 10px 0;
   }
 
   .nav-list:hover {
@@ -563,12 +576,138 @@ h3 {
 
   .img {
     height: fit-content;
-    max-height: 300px;
+    max-height: 325px;
+    overflow: auto;
   }
 
-  .offers {
+  .second-content {
+
+    margin: 0 auto;
+  }
+
+  .second-section .offers .books {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .second-section .offers .specials {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+  .main-footer .contact h2 {
+    display: inline;
+  }
+
+  .main-footer .contact span {
+    float: right;
+    display: block;
+  }
+
+  /* inventory */
+
+  .inventory-filter-ul {
+    max-width: 375px;
+  }
+
+  .inventory-li,
+  .search-inventory {
+    max-width: 375px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .results {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* reservation */
+
+  .reservation-form {
+    max-width: 100%;
+  }
+
+  .reservation-form h1 {
+    margin: 15px 0;
+  }
+
+  .reservation-infos textarea {
+    width: 100%;
+  }
+
+  .reservation-infos button {
+    padding: 10px;
+  }
+
+  /* policies */
+
+  .rules-section .rules {
+    padding: 15px 0;
+    max-width: 375px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+  }
+
+  .contact-section {
+    max-width: 100%;
+  }
+
+  .contact-field button {
+    width: 100%;
+    padding: 10px;
+    
+  }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .nav-list {
+    font-size: 14px;
+  }
+
+  .nav-list a {}
+
+  .img {
+    width: fit-content;
+    padding: 0;
+  }
+
+  .nav-list+.nav-list::before {
+    content: none;
+  }
+
+  .main-footer .contact h2 {
+    display: inline;
+    padding: 0;
+  }
+
+  .main-footer .info {
+    float: right;
+    display: block;
+    border-bottom: 1px solid #bbb9b9;
+    border-left: 1.5px solid #ececec;
+    border-right: 1.5px solid #ececec;
+    padding: 5px 0;
+
+  }
+
+  .contact-section {
+    max-width: 100%;
+  }
+
+  .contact-field button {
+    width: 100%;
+    padding: 10px;
     
   }
 }
-
-@media (min-width: 576px) and (max-width: 768px) {}
