@@ -405,10 +405,19 @@ button {
   text-align: left;
 }
 
-.reservation-infos input,
-textarea {
+.reservation-infos input {
   padding: 3px;
   width: 40%;
+
+  background: #dddada;
+  border-bottom: 1px solid #bbb9b9;
+  border-left: 1px solid #ececec;
+  border-right: 1px solid #ececec;
+}
+
+.reservation-infos textarea {
+  padding: 3px;
+  width: 71%;
 
   background: #dddada;
   border-bottom: 1px solid #bbb9b9;
