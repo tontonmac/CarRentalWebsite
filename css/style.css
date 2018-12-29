@@ -614,6 +614,23 @@ h3 {
     display: block;
   }
 
+  /* specials.html */
+
+  .deal-list {
+    max-width: 375px;
+    width: fit-content;
+    /* padding: 3px; */
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+    margin-top: 20px;
+
+    border-bottom: 1px solid #bbb9b9;
+    border-left: 1px solid #ececec;
+    border-right: 1px solid #ececec;
+    padding: 10px 0;
+  }
+
   /* inventory */
 
   .inventory-filter-ul {
@@ -636,6 +653,11 @@ h3 {
 
   .reservation-form {
     max-width: 100%;
+  }
+
+  .reservation-infos {
+    width: 100%;
+    
   }
 
   .reservation-form h1 {
