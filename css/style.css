@@ -241,12 +241,14 @@ hr {
 
 .deal-list img {
   max-width: 100%;
+  margin: 2px;
 }
 
 .deal-list p {
   overflow: auto;
   text-align: left;
   color: #3b3a3a;
+  margin: 2px;
 }
 
 .deal-list button {
@@ -617,9 +619,7 @@ h3 {
   /* specials.html */
 
   .deal-list {
-    max-width: 375px;
     width: fit-content;
-    /* padding: 3px; */
     height: 100%;
     box-sizing: border-box;
     overflow: auto;
@@ -629,6 +629,10 @@ h3 {
     border-left: 1px solid #ececec;
     border-right: 1px solid #ececec;
     padding: 10px 0;
+  }
+  
+  .deal-list img {
+   
   }
 
   /* inventory */
@@ -657,7 +661,22 @@ h3 {
 
   .reservation-infos {
     width: 100%;
-    
+    display: inline-block;
+    max-width: 575px;
+  }
+  .reservation-infos input {
+    padding-bottom: 6px;
+  }
+
+  .reservation-infos input[type="time"],
+  .reservation-infos input[type="date"] {
+    max-width: 575px;
+    width: 160px;
+    min-height: 25px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
 
   .reservation-form h1 {
@@ -681,7 +700,7 @@ h3 {
     height: auto;
     margin: 0 auto;
     box-sizing: border-box;
-    
+
   }
 
   .contact-section {
@@ -691,7 +710,7 @@ h3 {
   .contact-field button {
     width: 100%;
     padding: 10px;
-    
+
   }
 
 }
@@ -739,6 +758,6 @@ h3 {
   .contact-field button {
     width: 100%;
     padding: 10px;
-    
+
   }
 }
